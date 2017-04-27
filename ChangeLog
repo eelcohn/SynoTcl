@@ -1,0 +1,13 @@
+v8.6.6-2-with-tls:
+* Added tcltls v1.7.11 package (See http://core.tcl.tk/tcltls/index and https://sourceforge.net/p/tls/)
+
+v8.6.6-2:
+* Added symlink /usr/local/tcl
+* Changed symlinks to /var/packages/tcl/
+* Removed export LD_LIBRARY_PATH
+* Added additional symlinks in /usr/local/lib
+* Compiler and installer now use correct prefixes
+* Added compatibility with DSM6
+
+v8.6.6-1:
+* First release
