@@ -14,11 +14,12 @@ LICENSE = http://tcl.tk/software/tcltk/license.html
 
 GNU_CONFIGURE = 1
 
-# Enable 64-bit support in Tcl for 64-bit architectures
 CONFIGURE_ARGS=	--with-ssl-dir=$(STAGING_INSTALL_PREFIX)/ \
                 --with-tcl=$(STAGING_INSTALL_PREFIX)/lib/ \
 		--disable-sslv2 \
 		--disable-sslv3
+
+# Enable 64-bit support in Tcl for 64-bit architectures
 ifneq ($(findstring $(ARCH), avoton braswell bromolow cedarview x64 x86),)
     CONFIGURE_ARGS += --enable-64bit
 endif
