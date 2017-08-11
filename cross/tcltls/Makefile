@@ -1,5 +1,5 @@
 PKG_NAME = tcltls
-PKG_VERS = 1.7.11
+PKG_VERS = 1.7.12
 PKG_EXT = tar.gz
 PKG_DIST_NAME = $(PKG_NAME)-$(PKG_VERS).$(PKG_EXT)
 PKG_DIST_SITE = http://core.tcl.tk/tcltls/uv
