@@ -1,6 +1,6 @@
 SPK_NAME = tcl
-SPK_VERS = 8.6.6
-SPK_REV = 2
+SPK_VERS = 8.6.7
+SPK_REV = 1
 SPK_ICON = src/tcl.png
 
 DEPENDS = cross/$(SPK_NAME) cross/tcltls
@@ -12,7 +12,7 @@ DESCRIPTION = Tcl \(Tool Command Language\) is a very powerful but easy to learn
 RELOAD_UI = no
 DISPLAY_NAME = Tcl
 STARTABLE = no
-CHANGELOG = "1. First Synology package release<br>2. Added symlink /usr/local/tcl, Changed symlinks to /var/packages/tcl/, Removed export LD_LIBRARY_PATH<br>Added additional symlinks in /usr/local/lib<br>Compiler and installer now use correct prefixes.<br>Added compatibility with DSM6.<br>Added tcltls v1.7.11 package."
+CHANGELOG = "1. First Synology package release for Tcl version 8.6.7 and TclTLS version 1.7.12."
 
 HOMEPAGE = http://www.tcl.tk
 LICENSE = Custom
