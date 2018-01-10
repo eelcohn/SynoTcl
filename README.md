@@ -1,10 +1,12 @@
 # synotcl
 Tcl runtime packages for Synology DSM
 
-Binary files can be found under 'Releases'.
+## Where can I find the package (.spk) for my DiskStation?
+Binary files can be found under [Releases](https://github.com/eelcohn/SynoTcl/releases/).
 
 Please do not use release v8.6.6-1 since it's kinda buggy.
 
+## How can I compile the package myself?
 The source of these packages can be found at https://github.com/SynoCommunity/spksrc/
 
 To create these packages I've used Fedora 25 Workstation and executed the following commands:
