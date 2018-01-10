@@ -17,7 +17,7 @@ git clone https://github.com/SynoCommunity/spksrc.git
 rm -rf spksrc/cross/tcl/
 rm -rf spksrc/cross/tcltls/
 rm -rf spksrc/spk/tcl/
-git clone https://github.com/eelcohn/SynoTcl.git --branch v8.6.7-1-20170809
+git clone https://github.com/eelcohn/SynoTcl.git --branch v8.6.8-1-20180110
 mv SynoTcl/cross/tcl/ spksrc/cross/
 mv SynoTcl/cross/tcltls/ spksrc/cross/
 mv SynoTcl/spk/tcl/ spksrc/spk/
