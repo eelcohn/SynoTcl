@@ -1,5 +1,5 @@
 PKG_NAME = tcl
-PKG_VERS = 8.6.7
+PKG_VERS = 8.6.8
 PKG_EXT = tar.gz
 PKG_DIST_NAME = $(PKG_NAME)$(PKG_VERS)-src.$(PKG_EXT)
 PKG_DIST_SITE = http://prdownloads.sourceforge.net/tcl
@@ -35,38 +35,38 @@ myCompile:
 	sed -i -e "s|exec_prefix		= $(TCL_PACKAGE_PATH)|exec_prefix			= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/Makefile
 	sed -i -e "s|libdir			= $(TCL_PACKAGE_PATH)/lib|libdir			= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/Makefile
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/itcl4.1.0/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/itcl4.1.0/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/itcl4.1.0/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/itcl4.1.1/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/itcl4.1.1/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/itcl4.1.1/Makefile
 
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/sqlite3.20.0/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/sqlite3.20.0/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/sqlite3.20.0/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/sqlite3.21.0/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/sqlite3.21.0/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/sqlite3.21.0/Makefile
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbc1.0.5/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbc1.0.5/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbc1.0.5/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbc1.0.6/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbc1.0.6/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbc1.0.6/Makefile
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcmysql1.0.5/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcmysql1.0.5/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcmysql1.0.5/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcmysql1.0.6/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcmysql1.0.6/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcmysql1.0.6/Makefile
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcodbc1.0.5/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcodbc1.0.5/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcodbc1.0.5/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcodbc1.0.6/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcodbc1.0.6/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcodbc1.0.6/Makefile
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcpostgres1.0.5/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcpostgres1.0.5/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcpostgres1.0.5/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcpostgres1.0.6/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcpostgres1.0.6/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcpostgres1.0.6/Makefile
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcsqlite3-1.0.5/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcsqlite3-1.0.5/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcsqlite3-1.0.5/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcsqlite3-1.0.6/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcsqlite3-1.0.6/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/tdbcsqlite3-1.0.6/Makefile
 
-	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/thread2.8.1/Makefile
-	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/thread2.8.1/Makefile
-	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/thread2.8.1/Makefile
+	sed -i -e "s|prefix		= $(TCL_PACKAGE_PATH)|prefix		= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/thread2.8.2/Makefile
+	sed -i -e "s|exec_prefix	= $(TCL_PACKAGE_PATH)|exec_prefix	= $(STAGING_INSTALL_PREFIX)|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/thread2.8.2/Makefile
+	sed -i -e "s|libdir		= $(TCL_PACKAGE_PATH)/lib|libdir		= $(STAGING_INSTALL_PREFIX)/lib|g" $(WORK_DIR)/$(PKG_DIR)/pkgs/thread2.8.2/Makefile
 	@$(RUN) $(MAKE) install
 
 .PHONY: myPostInstall

@@ -1,5 +1,5 @@
 SPK_NAME = tcl
-SPK_VERS = 8.6.7
+SPK_VERS = 8.6.8
 SPK_REV = 1
 SPK_ICON = src/tcl.png
 
@@ -12,7 +12,7 @@ DESCRIPTION = Tcl \(Tool Command Language\) is a very powerful but easy to learn
 RELOAD_UI = no
 DISPLAY_NAME = Tcl
 STARTABLE = no
-CHANGELOG = "1. First Synology package release for Tcl version 8.6.7 and TclTLS version 1.7.12."
+CHANGELOG = "1. First Synology package release for Tcl version 8.6.8 and TclTLS version 1.7.14."
 
 HOMEPAGE = http://www.tcl.tk
 LICENSE = Custom
