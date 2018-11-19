@@ -1,5 +1,5 @@
 SPK_NAME = tcl
-SPK_VERS = 8.6.8
+SPK_VERS = 8.6.9
 SPK_REV = 1
 SPK_ICON = src/tcl.png
 
@@ -12,17 +12,12 @@ DESCRIPTION = Tcl \(Tool Command Language\) is a very powerful but easy to learn
 RELOAD_UI = no
 DISPLAY_NAME = Tcl
 STARTABLE = no
-CHANGELOG = "1. First Synology package release for Tcl version 8.6.8 and TclTLS version 1.7.14."
+CHANGELOG = "1. First Synology package release for Tcl version 8.6.9 and TclTLS version 1.7.16."
 
-HOMEPAGE = http://www.tcl.tk
+HOMEPAGE = https://www.tcl.tk
 LICENSE = Custom
 
-INSTALLER_SCRIPT = src/installer.sh
-SSS_SCRIPT = src/dsm-control.sh
-
-# Pre-DSM6 uses /usr/local/package, DSM6+ uses /var/packages/package/target
-# INSTALL_PREFIX = /usr/local/$(SPK_NAME)
-INSTALL_PREFIX = /var/packages/$(SPK_NAME)/target
+SERVICE_SETUP = src/service-setup.sh
 
 include ../../mk/spksrc.spk.mk
 

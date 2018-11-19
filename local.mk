@@ -5,4 +5,5 @@ MAINTAINER_URL=https://www.tcl.tk/
 DISTRIBUTOR=eelcohn
 DISTRIBUTOR_URL=https://github.com/eelcohn/SynoTcl/
 REPORT_URL=https://github.com/eelcohn/SynoTcl/issues/
-DEFAULT_TC=5.2
+DEFAULT_TC=6.1
+
