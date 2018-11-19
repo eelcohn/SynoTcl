@@ -1,3 +1,15 @@
+v8.6.9-1:
+* Upgraded Tcl to version 8.6.9
+* Upgraded TclTLS to version 1.7.16
+* Tcl for denverton/dockerx64/kvmx64 CPU's is now compiled with 64-bit long/pointers (./configure --enable-64bit)
+* TclTLS now uses 4096-bit DH parameters instead of 2048-bit
+* TclTLS for avoton/braswell/bromolow/cedarview/denverton/dockerx64/kvmx64/x64/x86 CPU's is now compiled with 64-bit long/pointers (-m64 compiler option)
+* TclTLS is now compiled with optimizations (-O2 option)
+
+v8.6.8-1:
+* Upgraded Tcl to version 8.6.8
+* Upgraded TclTLS to version 1.7.14
+
 v8.6.7-1:
 * Upgraded Tcl to version 8.6.7
 * Upgraded TclTLS to version 1.7.12

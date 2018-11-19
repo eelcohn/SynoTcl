@@ -9,3 +9,5 @@ package require tdbc::odbc
 package require tdbc::postgres
 package require sqlite3
 package require Thread
+package require tls
+

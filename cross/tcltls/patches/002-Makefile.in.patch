@@ -1,0 +1,20 @@
+--- Makefile.in	2018-11-17 14:55:29.063517956 +0100
++++ Makefile.in	2018-11-17 14:55:13.751954978 +0100
+@@ -20,7 +20,7 @@
+ 
+ # The shared object target
+ tcltls.@SHOBJEXT@: tls.o tlsBIO.o tlsIO.o tlsX509.o Makefile
+-	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o tcltls.@SHOBJEXT@ tls.o tlsBIO.o tlsIO.o tlsX509.o $(LIBS)
++	$(CC) $(CPPFLAGS) -O2 $(CFLAGS) $(LDFLAGS) -o tcltls.@SHOBJEXT@ tls.o tlsBIO.o tlsIO.o tlsX509.o $(LIBS)
+ 
+ # The static target
+ tcltls.@AREXT@: tls.o tlsBIO.o tlsIO.o tlsX509.o Makefile
+@@ -51,7 +51,7 @@
+ # Generic target for building files from the "srcdir"
+ # tree -- the default target will not match paths
+ .c.o:
+-	$(CC) $(CPPFLAGS) $(CFLAGS) -o "$@" -c "$<"
++	$(CC) $(CPPFLAGS) -O2 $(CFLAGS) -o "$@" -c "$<"
+ 
+ # Install the extension
+ install: @EXTENSION_TARGET@ pkgIndex.tcl
