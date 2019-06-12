@@ -1,14 +1,13 @@
-puts "The version is $tcl_version"
-puts "The patchlevel is [info patchlevel]"
+puts "version $tcl_version"
+puts "patchlevel [info patchlevel]"
 puts "pkgPath is set to $tcl_pkgPath"
 puts "autopath is set to $auto_path"
-clock scan 1752-09-02 -format %Y-%m-%d -locale en_US
-package require itcl
-package require sqlite3
-package require tdbc
-package require tdbc::mysql
-package require tdbc::odbc
-package require tdbc::postgres
-package require sqlite3
-package require Thread
-package require tls
+puts "Clock scan returns [clock scan 1752-09-02 -format %Y-%m-%d -locale en_US]"
+puts "itcl version [package require itcl]"
+puts "sqlite version [package require sqlite3]"
+puts "tdbc version [package require tdbc]"
+puts "tdbc::mysql version [package require tdbc::mysql]"
+puts "tdbc::odbc version [package require tdbc::odbc]"
+puts "tdbc::postgres version [package require tdbc::postgres]"
+puts "Thread version [package require Thread]"
+puts "tls version [package require tls]"
